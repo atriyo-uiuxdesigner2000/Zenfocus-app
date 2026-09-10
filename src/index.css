@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #11562a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #2e6f40;
+  --color-on-primary-container: #aaefb4;
+  --color-primary-fixed: #adf3b8;
+  --color-primary-fixed-dim: #92d69d;
+  --color-on-primary-fixed: #00210b;
+
+  --color-secondary: #735c00;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ffd969;
+  --color-on-secondary-container: #765e00;
+  --color-secondary-fixed: #ffe089;
+  --color-secondary-fixed-dim: #e7c355;
+  --color-on-secondary-fixed: #241a00;
+
+  --color-tertiary: #005729;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #1d713c;
+  --color-on-tertiary-container: #9ff2b0;
+  --color-tertiary-fixed: #a2f5b3;
+
+  --color-surface: #effdef;
+  --color-background: #effdef;
+  --color-on-surface: #121e16;
+  --color-on-surface-variant: #404940;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #e9f7e9;
+  --color-surface-container: #e3f2e3;
+  --color-surface-container-high: #deecde;
+  --color-surface-container-highest: #d8e6d8;
+
+  --color-inverse-surface: #27332a;
+  --color-inverse-on-surface: #e6f5e6;
+  --color-outline: #70796f;
+  --color-outline-variant: #c0c9bd;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-headline: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-title: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface, #effdef);
+    color: var(--color-on-surface, #121e16);
+    font-family: var(--font-body, "Inter", sans-serif);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
